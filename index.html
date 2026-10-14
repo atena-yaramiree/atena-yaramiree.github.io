@@ -49,6 +49,8 @@ h1{font-family:var(--display);font-weight:700;font-size:2.4rem;line-height:1.05;
 .prof{display:grid;justify-items:center;gap:6px;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 6px;font-size:.84rem;font-weight:500;text-align:center;min-width:0}
 .prof svg{width:24px;height:24px}
 .prof:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mail{display:flex;align-items:center;gap:12px;flex:1;min-width:0;color:inherit;text-decoration:none}
+.mail:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:6px}
 .copy{font-family:var(--mono);font-size:.75rem;border:1px solid var(--line);border-radius:8px;padding:4px 8px;background:transparent;color:var(--accent);cursor:pointer}
 .poster{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;gap:6px}
 .eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0}
@@ -66,7 +68,7 @@ footer{color:var(--muted);font-size:.82rem;text-align:center}
   <header>
     <img class="photo" src="photo.jpg" alt="Atena Yaramiree" width="104" height="104">
     <h1>Atena Yaramiree</h1>
-    <p class="role"><strong>MSc Biomedical Engineering</strong>, American University of Sharjah</p>
+    <p class="role"><strong>MSc Biomedical Engineering</strong><br>American University of Sharjah<br>Dubai, UAE</p>
     <p class="focus">Biomedical engineer interested in nanomedicine, microfluidics and targeted cancer therapy. I enjoy work that links hands-on lab research with data analysis, and I'm open to research collaborations and new opportunities.</p>
   </header>
 
@@ -90,8 +92,10 @@ footer{color:var(--muted);font-size:.82rem;text-align:center}
       </a>
     </div>
     <div class="btn" role="group" aria-label="Email">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>
-      <span class="txt">Email<span class="sub" id="email">g00098847@alumni.aus.edu</span></span>
+      <a class="mail" href="mailto:g00098847@alumni.aus.edu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>
+        <span class="txt">Send me an email<span class="sub" id="email">g00098847@alumni.aus.edu</span></span>
+      </a>
       <button class="copy" id="copyEmail" type="button">Copy</button>
     </div>
     <a class="btn" href="#cv">
@@ -116,7 +120,7 @@ footer{color:var(--muted);font-size:.82rem;text-align:center}
     </a>
   </section>
 
-  <footer>Dubai, UAE · English · Arabic · Farsi</footer>
+  <footer>English · Arabic · Farsi</footer>
 </div>
 
 <script>
