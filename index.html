@@ -44,6 +44,11 @@ h1{font-family:var(--display);font-weight:700;font-size:2.4rem;line-height:1.05;
 .btn.primary .sub{color:rgba(255,255,255,.85)}
 .btn .go{color:var(--muted);font-size:1.1rem}
 .btn.primary .go{color:#fff}
+*,*::before,*::after{box-sizing:border-box}
+.profiles{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.prof{display:grid;justify-items:center;gap:6px;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 6px;font-size:.84rem;font-weight:500;text-align:center;min-width:0}
+.prof svg{width:24px;height:24px}
+.prof:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .copy{font-family:var(--mono);font-size:.75rem;border:1px solid var(--line);border-radius:8px;padding:4px 8px;background:transparent;color:var(--accent);cursor:pointer}
 .poster{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;gap:6px}
 .eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0}
@@ -74,6 +79,16 @@ footer{color:var(--muted);font-size:.82rem;text-align:center}
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4V21H3V9.75Zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-4.9c0-1.17-.02-2.68-1.63-2.68-1.64 0-1.89 1.28-1.89 2.6V21h-4V9.75Z"/></svg>
       <span class="txt">Connect on LinkedIn<span class="sub">linkedin.com/in/atena-yaramiree</span></span><span class="go">→</span>
     </a>
+    <div class="profiles" aria-label="Research profiles">
+      <a class="prof" href="https://scholar.google.com/citations?user=WIZJWX4AAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3 1 9.5l4 2.3V16c0 1.6 3.1 3.5 7 3.5s7-1.9 7-3.5v-4.2l2-1.2V16h2V9.5L12 3Zm0 2.3 7.6 4.2L12 13.7 4.4 9.5 12 5.3Zm-5 7.6 5 2.9 5-2.9V16c-.3.5-2.2 1.5-5 1.5s-4.7-1-5-1.5v-3.1Z"/></svg>
+        <span>Google Scholar</span>
+      </a>
+      <a class="prof" href="https://orcid.org/0009-0004-4185-3648" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><text x="12" y="16" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="10" fill="var(--surface)">iD</text></svg>
+        <span>ORCID</span>
+      </a>
+    </div>
     <div class="btn" role="group" aria-label="Email">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>
       <span class="txt">Email<span class="sub" id="email">g00098847@alumni.aus.edu</span></span>
